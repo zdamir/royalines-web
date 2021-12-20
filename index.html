@@ -20,18 +20,18 @@
 
     <script>
         function setViewportHeight() {
-            alert('here');
             // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
             var vh = window.innerHeight * 0.01;
             // Then we set the value in the --vh custom property to the root of the document
-            document.documentElement.style.setProperty('-+vh', `${vh}px`);
+            document.documentElement.style.setProperty('--vh', `${vh}px`);
+            alert('set');
         }
 
         
         // We listen to the resize event
         //window.addEventListener('resize', setViewportHeight);
         //window.addEventListener('orientationchange', setViewportHeight);
-        setViewportHeight();
+        //setViewportHeight();
     </script>
 
     <!-- Bootstrap core CSS -->
@@ -117,7 +117,7 @@
     </header>
 
     <!-- START HOME -->
-    <section class="bg-home" id="home">
+    <section class="bg-home vh-100" id="home">
         <div class="bg-overlay"></div>
         <div class="home-center">
             <div class="home-desc-center">
