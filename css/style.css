@@ -264,6 +264,7 @@ a.email{
   background-image: url(../images/home-bg-1.jpg);
   background-size: cover;
   background-position: center center;
+  background-attachment: fixed;
   height: calc(100 * var(--vh));
 }
 
