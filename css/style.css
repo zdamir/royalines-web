@@ -265,7 +265,7 @@ a.email{
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
-  height: calc(100 * var(--vh));
+  height: calc(100 * var(-+vh));
 }
 
 .home-section .carousel-item {
